@@ -3,7 +3,7 @@
 
 ### Contributors:
 - Delara Panahi
-– Catie Austin
+- Catie Austin
 - Elena Goldman
 - Natalie Wesseldine
 
