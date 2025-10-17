@@ -10,10 +10,56 @@
 
 .background {
     width: 100%;
-    min-height: 2000px;
+    min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("./true_blue_background.jpg");
     background-repeat: repeat-y;
     background-size: auto;
     background-position: center top;
     position: relative;
+    color: #fff;
 }
+
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 25px;
+}
+
+
+.mytabs input[type ="radio"] {
+    display: none;
+
+}
+
+.mytabs label {
+    padding: 15px 25px;
+    background: #e2e2e2;
+    color: #333;
+    font-weight:bold;
+    cursor: pointer;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+    color: #000;
+}
+
+
+.mytabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+
+
+

@@ -1,23 +1,57 @@
 <!-- main HTML file that allows the user to submit an RGB value
     they can then view what that color would look like to people with different types of color-blindness -->
+ 
+<html lang = "en">
+    <head>
+    <meta charset="UTF-8">
+    <title>ColorBuddy App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link rel="stylesheet" href = "./colorBuddy.css">
+</head>
 
-<html>
-
-<div class = "background">
-    <link rel="stylesheet" href="./colorBuddy.css">
 </div>
+<body>
+    <div class = "background">
+
+        <div class = "mytabs">
+            <input type = "radio" id = "tab1" name="mytabs" checked="checked">
+            <label for ="tab1"> Color Buddy</label>
+            <div class = "tab">
+                <div class="Greetings">
+                    <p> Please enter the RGB value that you would like to check! </p>
+                </div>
+                <div class="Input-RGB">
+                    <input text="text" id="rgb" name="rgb" placeholder="Enter your RGB value">
+                </div>
+                <div class="Submit-Button">
+                    <button> Submit </button>
+                </div>
+            </div>
 
 
-<div class = "Greetings">
-    <p> Please enter the RGB value that you would like to check! </p>
-</div>
+            <input type = "radio" id = "tab2" name="mytabs">
+            <label for ="tab2"> About ColorBuddy</label>
+            <div class = "tab">
+                <p>
+                    about color stuff
+                </p>
+            </div>
 
-<div class = "Input RGB">
-    <input text = "text" id = "rgb" name = "rgb" placeholder = "Enter your RGB value">
-</div>
 
-<div class = "Submit Button">
-    <button> Submit </button>
-</div>
+            <input type = "radio" id = "tab3" name="mytabs">
+            <label for ="tab3"> Credits </label>
+            <div class = "tab">
+                <p>
+                    credits
+                </p>
+            </div>
 
+            
+        </div>
+    </div>
+
+
+
+
+</body>
 </html>
