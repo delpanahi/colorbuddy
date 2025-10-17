@@ -2,6 +2,18 @@
 /* style for HTML files */
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
 
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -11,12 +23,17 @@
 .background {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url("./true_blue_background.jpg");
+    background: linear-gradient(rgba(255, 154, 213, 0.874), rgba(0,0,0,0.1)), url("./peach.jpg");
     background-repeat: repeat-y;
-    background-size: auto;
+    background-size: cover;
     background-position: center top;
     position: relative;
     color: #fff;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-attachment: fixed; /* optional — makes it stay put on scroll */
+
 }
 
 
@@ -24,7 +41,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 600px;
-    margin: 100px auto;
+    margin: 0 auto;  /* remove the 100px top margin */
     padding: 25px;
 }
 
@@ -35,7 +52,7 @@
 }
 
 .mytabs label {
-    padding: 15px 25px;
+    padding: 15px 37px;
     background: #e2e2e2;
     color: #333;
     font-weight:bold;
@@ -44,12 +61,60 @@
 
 .mytabs .tab {
     width: 100%;
-    padding: 20px;
+    padding: 200px;
     background: #fff;
     order: 1;
     display: none;
     color: #000;
 }
+
+.mytabs .tab .Greetings {
+    position: absolute;
+    top: 17%;
+    left: 29%;  
+    text-align: left;  /* optional — keeps text left-aligned */
+    width: 80%;        /* adjusts so it fits well */
+    font-size: 17px;
+  }
+
+  .mytabs .tab .Input-RGB input {
+    width: 250px;     /* width of the text box */
+    height: 60px;     /* height of the text box */
+    padding: 8px;     /* inside padding for text */
+    font-size: 18px;  /* size of the text */
+    border-radius: 10px;  /* optional: rounded corners */
+    border: 5px solid #ff7ba0;
+    top: 22%;
+    left: 29%;
+    position: absolute;
+}
+
+.mytabs .tab .Submit-Button {
+    position: absolute;
+    top: 24%;   /* move it vertically */
+    left: 51%;  /* adjust horizontal position */
+  }
+  
+  /* style the actual button */
+  .mytabs .tab .Submit-Button button {
+    width: 140px;       /* size of button */
+    height: 40px;
+    background-color: #ff7ba0; 
+    color: rgb(0, 0, 0);        /* text color */
+    font-size: 18px;     /* text size */
+    font-weight: bold;
+    border: none;        /* remove default border */
+    border-radius: 8px;  /* rounded corners */
+    cursor: pointer;     /* cursor changes on hover */
+    transition: background-color 0.3s ease;
+    position: absolute;
+  }
+  
+  /* optional: add hover effect */
+  .mytabs .tab .Submit-Button button:hover {
+    background-color: #fe8ddc; /* darker blue when hovered */
+  }
+  
 
 
 .mytabs input[type="radio"]:checked + label + .tab {
@@ -59,7 +124,6 @@
 .mytabs input[type="radio"]:checked + label {
     background: #fff;
 }
-
 
 
 
