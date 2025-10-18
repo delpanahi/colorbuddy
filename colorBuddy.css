@@ -40,7 +40,7 @@ body {
 .mytabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;  /* remove the 100px top margin */
     padding: 25px;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .mytabs label {
-    padding: 15px 39.57px;
+    padding: 15px 89.5px;
     background: #ffb6e8;
     color: #333;
     font-weight:bold;
@@ -61,7 +61,7 @@ body {
 
 .mytabs .tab {
     width: 100%;
-    padding: 200px;
+    padding: 250px;
     background: #fff;
     order: 1;
     display: none;
@@ -70,8 +70,8 @@ body {
 
 .mytabs .tab .Greetings {
     position: absolute;
-    top: 17%;
-    left: 29%;  
+    top: 8%;
+    left: 8%;  
     text-align: left;  /* optional — keeps text left-aligned */
     width: 80%;        /* adjusts so it fits well */
     font-size: 17px;
@@ -84,15 +84,15 @@ body {
     font-size: 18px;  /* size of the text */
     border-radius: 10px;  /* optional: rounded corners */
     border: 5px solid #ff7ba0;
-    top: 22%;
-    left: 29%;
+    top: 15%;
+    left: 8%;
     position: absolute;
 }
 
 .mytabs .tab .Submit-Button {
     position: absolute;
-    top: 24%;   /* move it vertically */
-    left: 51%;  /* adjust horizontal position */
+    top: 17%;   /* move it vertically */
+    left: 39%;  /* adjust horizontal position */
   }
   
   /* style the actual button */
@@ -125,5 +125,114 @@ body {
     background: #fff;
 }
 
+.mytabs .tab .img1 {
+    border-radius: 50%;
+    top: 8%;
+    left: 8%;
+    height: 20%;
+    width: 15%;
+    position: absolute;
+}
+
+.mytabs .tab .pdelara {
+    top: 29%;
+    left: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+    
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Smooth tab fade + slide animation --- */
+.tab {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .active-tab {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    display: block !important;
+  }
+  
+  /* --- Label hover (simple modern effect) --- */
+  .mytabs label {
+    transition: all 0.3s ease;
+  }
+  
+  .mytabs label:hover {
+    background-color: #ffd8f3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 182, 232, 0.6);
+  }
+  
+  /* --- Button ripple effect --- */
+  .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-effect 0.6s linear;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple-effect {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  /* --- Confetti animation --- */
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    animation: fall 1s linear forwards;
+    border-radius: 2px;
+    z-index: 9999;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(200px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+  /* --- Credits tab image hover effect --- */
+  .img1 {
+    transition: transform 0.6s ease, box-shadow 0.4s ease;
+    border: 5px solid transparent;
+  }
+  
+  .img1:hover {
+    transform: scale(1.15) rotate(3deg);
+    box-shadow: 0 0 25px rgba(255, 182, 232, 0.9);
+    border: 5px solid #ffb6e8;
+  }
+  
