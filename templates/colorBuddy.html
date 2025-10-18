@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Color Buddy</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='COLORBUDDY.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='colorBuddy.css') }}">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <div class="background">
+    <div class="mytabs">  
+
+      <!-- Tab 1 -->
+      <input type="radio" id="tab1" name="mytabs" checked>
+      <label for="tab1" class="tab-label">Color Buddy</label>
+      <div class="tab" id="tab-content-1">
+        <div class="left-column">
+          <div class="Greetings">
+            <p>Please enter the RGB value that you would like to check (e.g., 255,0,0):</p>
+          </div>
+
+          <div class="Input-RGB">
+            <input type="text" id="rgbInput" name="rgb" placeholder="255,0,0" />
+          </div>
+
+          <div class="Submit-Button">
+            <button type="button" id="submitBtn">Simulate</button>
+          </div>
+        </div>
+
+        <div class="right-column">
+          <!-- Results appear here -->
+          <div id="results" class="results-grid"></div>
+        </div>
+      </div>
+
+      <!-- Tab 2 -->
+      <input type="radio" id="tab2" name="mytabs">
+      <label for="tab2" class="tab-label">About Color Buddy</label>
+      <div class="tab" id="tab-content-2">
+        <div class="tab-inner">
+          <p>Color Buddy is a tool to visualize how colors appear to people with different types of color-blindness.</p>
+          <p>Enter an RGB triple (0–255) and click Simulate. You'll get the original color plus protanopia, deuteranopia, and tritanopia simulations.</p>
+        </div>
+      </div>
+
+      <!-- Tab 3 -->
+      <input type="radio" id="tab3" name="mytabs">
+      <label for="tab3" class="tab-label">Credits</label>
+      <div class="tab" id="tab-content-3">
+        <div class="tab-inner credits">
+          <img src="delara1.jpg" alt="delara" class="img1" />
+          <div class="pdelara">
+            <p>Delara Panahi <br> Computer Science, 2027</p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- .mytabs -->
+  </div> <!-- .background -->
+
+
+  <script src="{{ url_for('static', filename='colorBuddy.js') }}"></script>
+
+</body>
+</html>
