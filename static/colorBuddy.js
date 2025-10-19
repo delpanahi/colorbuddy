@@ -1,6 +1,6 @@
-// Color Buddy Interactivity and Effects
+
 document.addEventListener("DOMContentLoaded", () => {
-  // --- Elements ---
+  // ELEMENTS
   const tabs = document.querySelectorAll('.mytabs input[type="radio"]');
   const tabContents = document.querySelectorAll('.mytabs .tab');
   const greeting = document.querySelector('.Greetings p');
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const rgbInput = document.querySelector('#rgbInput');
   const resultsDiv = document.querySelector('#results');
 
-  // --- Typing animation for greeting ---
+  // TYPING ANIMATION EFFECT FOR GREETING
   if (greeting) {
     const text = greeting.textContent.trim();
     greeting.textContent = "";
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })();
   }
 
-  // --- Tab switching ---
+  // SWITCHING BETWEEN TABS
   tabs.forEach((tab, index) => {
     tab.addEventListener("change", () => {
       tabContents.forEach(c => c.classList.remove("active-tab"));
@@ -29,13 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- Input glow ---
+  // INPUT GLOW EFFECT
   if (rgbInput) {
     rgbInput.addEventListener("focus", () => rgbInput.style.boxShadow = "0 0 16px #ff7ba0");
     rgbInput.addEventListener("blur", () => rgbInput.style.boxShadow = "none");
   }
 
-  // --- Helper: ripple effect ---
+  // RIPPLE EFFECT
   function createRipple(e, container) {
     const rect = container.getBoundingClientRect();
     const ripple = document.createElement('span');
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => ripple.remove(), 650);
   }
 
-  // --- Helper: confetti effect ---
+  // CONFETTI EFFECT
   function confettiBurst() {
     for (let j = 0; j < 16; j++) {
       const confetti = document.createElement("div");
@@ -82,12 +82,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // --- Helper: render results from Flask ---
+  // RENDERING RESULTS FROM FLASK
   function renderResults(data) {
     if (!resultsDiv) return;
     resultsDiv.innerHTML = '';
 
-    for (const [type, info] of Object.entries(data)) {
+    
+    const order = ["original", "protanopia", "deuteranopia", "tritanopia"];
+
+    for (const type of order) {
+      if (!data[type]) continue; 
+
+      const info = data[type];
       const div = document.createElement('div');
       div.className = 'color-box';
       const rgbText = Array.isArray(info.rgb) ? info.rgb.join(', ') : '';
@@ -100,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // --- Submit button click handler ---
+  // SUBMIT/SIMULATE BUTTON HANDLING
   if (submitBtn) {
     submitBtn.addEventListener("click", async (e) => {
       createRipple(e, submitBtn);
