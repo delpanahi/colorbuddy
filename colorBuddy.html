@@ -1,0 +1,85 @@
+<!-- main HTML file that allows the user to submit an RGB value
+    they can then view what that color would look like to people with different types of color-blindness -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Color Buddy </title>
+
+
+  <link rel="icon" type="image/png" href="./COLORBUDDY.png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <link rel="stylesheet" href="./colorBuddy.css">
+</head>
+
+<body>
+  <div class="background">
+
+    <div class="mytabs">
+
+      <input type="radio" id="tab1" name="mytabs" checked="checked">
+      <label for="tab1">Color Buddy</label>
+
+      <div class="tab">
+
+        <div class="Greetings">
+          <p>Please enter the RGB value that you would like to check:</p>
+        </div>
+
+        <div class="Input-RGB">
+          <input type="text" id="rgb" name="rgb" placeholder="enter your RGB value">
+        </div>
+
+        <div class="Submit-Button">
+          <button>Submit</button>
+        </div>
+
+      </div>
+
+      <input type="radio" id="tab2" name="mytabs">
+
+      <label for="tab2">About Color Buddy</label>
+
+      <div class="tab">
+        <p>about color stuff</p>
+      </div>
+
+      <input type="radio" id="tab3" name="mytabs">
+
+      <label for="tab3">Credits</label>
+
+      <div class="tab">
+        <div class="credits">
+          <div class="person">
+            <img src="delara1.jpg" alt="delara" class="img1">
+            <p>Delara Panahi <br> Computer Science, 2027</p>
+          </div>
+
+          <div class="person">
+            <img src="elena.jpg" alt="elena" class="img2">
+            <p>Elena Goldman <br> Computer Science, 2026</p>
+          </div>
+
+          <div class="person">
+            <img src="natalie.jpg" alt="natalie" class="img3">
+            <p>Natalie Wessldine <br> Computer Science, 2027</p>
+          </div>
+
+          <div class="person">
+            <img src="elena.jpg" alt="cait" class="img4">
+            <p>Catherine Austin <br> Computer Science, 2028</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    `
+  </div>
+  <script src="./colorBuddy.js"></script>
+
+</body>
+
+</html>

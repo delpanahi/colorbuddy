@@ -1,0 +1,323 @@
+/* style for HTML files */
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 154, 213, 0.874), rgba(0, 0, 0, 0.1)), url("./peach.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    color: #fff;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    /* optional — makes it stay put on scroll */
+
+}
+
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    /* remove the 100px top margin */
+    padding: 25px;
+}
+
+
+.mytabs input[type="radio"] {
+    display: none;
+
+}
+
+.mytabs label {
+    padding: 15px 89.5px;
+    background: #ffb6e8;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 50px;
+    background: #fff;
+    order: 1;
+    display: none;
+    color: #000;
+}
+
+.mytabs .tab .Greetings {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    text-align: left;
+    /* optional — keeps text left-aligned */
+    width: 80%;
+    /* adjusts so it fits well */
+    font-size: 17px;
+}
+
+.mytabs .tab .Input-RGB input {
+    width: 250px;
+    /* width of the text box */
+    height: 60px;
+    /* height of the text box */
+    padding: 8px;
+    /* inside padding for text */
+    font-size: 18px;
+    /* size of the text */
+    border-radius: 10px;
+    /* optional: rounded corners */
+    border: 5px solid #ff7ba0;
+    top: 15%;
+    left: 8%;
+    position: absolute;
+}
+
+.mytabs .tab .Submit-Button {
+    position: absolute;
+    top: 17%;
+    /* move it vertically */
+    left: 39%;
+    /* adjust horizontal position */
+}
+
+/* style the actual button */
+.mytabs .tab .Submit-Button button {
+    width: 140px;
+    /* size of button */
+    height: 40px;
+    background-color: #ff7ba0;
+    color: rgb(0, 0, 0);
+    /* text color */
+    font-size: 18px;
+    /* text size */
+    font-weight: bold;
+    border: none;
+    /* remove default border */
+    border-radius: 8px;
+    /* rounded corners */
+    cursor: pointer;
+    /* cursor changes on hover */
+    transition: background-color 0.3s ease;
+    position: absolute;
+}
+
+/* optional: add hover effect */
+.mytabs .tab .Submit-Button button:hover {
+    background-color: #fe8ddc;
+    /* darker blue when hovered */
+}
+
+
+
+.mytabs input[type="radio"]:checked+label+.tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked+label {
+    background: #fff;
+}
+
+/*.mytabs .tab .img1 {
+    border-radius: 50%;
+    top: 8%;
+    left: 8%;
+    height: 20%;
+    width: 15%;
+    position: absolute;
+}
+
+.mytabs .tab .img2 {
+    border-radius: 50%;
+    top: 8%;
+    left: 8%;
+    height: 20%;
+    width: 15%;
+    position: absolute;
+}
+
+.mytabs .tab .pdelara {
+    top: 29%;
+    left: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+
+}
+
+.mytabs .tab .pelena {
+    top: 29%;
+    left: 5%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    position: absolute;
+
+}*/
+
+/* --- Smooth tab fade + slide animation --- */
+.tab {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.active-tab {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    display: block !important;
+}
+
+/* --- Label hover (simple modern effect) --- */
+.mytabs label {
+    transition: all 0.3s ease;
+}
+
+.mytabs label:hover {
+    background-color: #ffd8f3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 182, 232, 0.6);
+}
+
+/* --- Button ripple effect --- */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-effect 0.6s linear;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+}
+
+@keyframes ripple-effect {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* --- Confetti animation --- */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    animation: fall 1s linear forwards;
+    border-radius: 2px;
+    z-index: 9999;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(200px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* --- Credits tab image hover effect --- */
+.img1 {
+    transition: transform 0.6s ease, box-shadow 0.4s ease;
+    border: 5px solid transparent;
+}
+
+.img1:hover {
+    transform: scale(1.15) rotate(3deg);
+    box-shadow: 0 0 25px rgba(255, 182, 232, 0.9);
+    border: 5px solid #ffb6e8;
+}
+
+.credits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+    justify-items: center;
+    align-items: start;
+    position: relative;
+    left: -30px;
+    /* moves all images left */
+    top: -10px;
+    /* moves all images up */
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    /* stack image + text vertically */
+    align-items: center;
+    /* center horizontally */
+    width: 180px;
+    /* consistent width */
+    text-align: center;
+    /* center the text inside <p> */
+}
+
+
+/* all four images share same style */
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.6s ease, box-shadow 0.4s ease;
+    border: 5px solid transparent;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover {
+    transform: scale(1.15) rotate(3deg);
+    box-shadow: 0 0 25px rgba(255, 182, 232, 0.9);
+    border: 5px solid #ffb6e8;
+}
+
+.person p {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+/* Optional: stack into 2x2 grid on smaller screens */
+@media (max-width: 600px) {
+    .credits {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
