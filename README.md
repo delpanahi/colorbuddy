@@ -76,8 +76,10 @@ Each 3x3 matrix transforms an RGB value into a strong approximation of the color
 4. The resulting RGB values are clipped to the valid range [0, 1], converted back to 0–255, and returned.
 
 
-Source:
-“A Physiologically-based Model for Simulation of Color Vision Deficiency” — Machado, Oliveira & Fernandes (IEEE Transactions on Visualization & Computer Graphics, Vol. 15(6), Nov/Dec 2009)
+## Sources:
+- “A Physiologically-based Model for Simulation of Color Vision Deficiency” — Machado, Oliveira & Fernandes (IEEE Transactions on Visualization & Computer Graphics, Vol. 15(6), Nov/Dec 2009)
+<br>
+- Colour Blind Awareness, www.colourblindawareness.org/. Accessed 20 Oct. 2025. 
 
 
 
