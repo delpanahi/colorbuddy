@@ -4,7 +4,7 @@
 
 ### Dependencies:
 Please ensure that you have Python installed before running the program.
-<br>
+<br><br>
 *You can install Python onto a **Windows** computer by running the line:*
 <br>```winget install Python.Python.3``` 
 
