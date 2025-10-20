@@ -36,11 +36,13 @@ The last tab, 'Credits', showcases the contributors of this project to add a mor
   - Styles the different tabs and various components of the html file.
     
 ```colorBuddy.js```
-  - Adds effects and animations to the components of the html file, as well as rendering the results from the Flask server. 
+  - Adds effects and animations to the components of the html file.
+  - Renders the results from the Flask server. 
 
 ### Backend:
 ```colorBuddy.py```
-  - Where colors are simulated based on the RGB input and the type of color vision deficiency (using Machado matrices). Also creates images of the colors to be displayed.
+  - Where colors are simulated based on the RGB input and the type of color vision deficiency (using Machado matrices).
+  - Also creates images of the colors to be displayed.
     
 ```app.py```
   - Where the Flask server is created.
