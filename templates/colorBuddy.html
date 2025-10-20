@@ -50,13 +50,41 @@
       </div>
 
       <!-- Tab 3 -->
-      <input type="radio" id="tab3" name="mytabs">
+      <!-- Tab 3 -->
+      <input type="radio" id="tab3" name="mytabs" />
       <label for="tab3" class="tab-label">Credits</label>
-      <div class="tab" id="tab-content-3">
-        <div class="tab-inner credits">
-          <img src="delara1.jpg" alt="delara" class="img1" />
-          <div class="pdelara">
-            <p>Delara Panahi <br> Computer Science, 2027</p>
+      <div class="tab">
+        <div class="credits">
+          <div class="person">
+            <img src="{{ url_for('static', filename='delara1.jpg') }}" alt="delara" class="img1" />
+            <p>
+              Delara Panahi <br />
+              Computer Science, 2027
+            </p>
+          </div>
+
+          <div class="person">
+            <img src="{{ url_for('static', filename='elena.jpg') }}" alt="elena" class="img2" />
+            <p>
+              Elena Goldman <br />
+              Computer Science, 2026
+            </p>
+          </div>
+
+          <div class="person">
+            <img src="{{ url_for('static', filename='natalie.jpg') }}" alt="natalie" class="img3" />
+            <p>
+              Natalie Wessldine <br />
+              Computer Science, 2027
+            </p>
+          </div>
+
+          <div class="person">
+            <img src="{{ url_for('static', filename='catie.jpg') }}" alt="cait" class="img4" />
+            <p>
+              Catherine Austin <br />
+              Computer Science, 2028
+            </p>
           </div>
         </div>
       </div>
