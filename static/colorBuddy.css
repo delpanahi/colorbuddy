@@ -256,3 +256,12 @@ body {
   box-shadow: 0 4px 16px rgba(190, 32, 140, 0.473);
   line-height: 1.6;
 }
+
+.about-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block; 
+  margin: 0 auto 1em; 
+}
