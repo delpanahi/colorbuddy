@@ -3,8 +3,8 @@
 
 ### Dependencies:
 Please run the line:
-pip install -r .\requirements.txt
-... in order to install the proper packages. 
+<br>```pip install -r .\requirements.txt```
+<br> ...in order to install the proper packages. 
 
 ### Contributors:
 - Delara Panahi
