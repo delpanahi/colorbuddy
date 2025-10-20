@@ -15,7 +15,10 @@ Please ensure that you have Python installed before running the program.
 *You can check if you have Python installed by running:*
 <br>```python --version``` for **Windows**
 <br>```python3 --version``` for **Macs**
+<br><br>
 
+If you have Python installed, running one of the above commands (like ```python3 --version```) should result in output like:
+<br> ```Python 3.12.7```
 
 *Once Python is installed, please run the line:* 
 <br>```pip install -r .\requirements.txt```
@@ -36,10 +39,10 @@ Please ensure that you have Python installed before running the program.
 
 Once designers input an RGB value, **Color Buddy** will provide a visual of how their inputted color would look to those with protanopia (inablility to see red), deuteranopia (inability to see green), and tritanopia (inability to see blue). 
 
-Our **Color Buddy** tool also includes an 'About **Color Buddy**' tab, giving users more information about protanopia, deuteranopia, and tritanopia.
-This 'About **Color Buddy**' tab aims to bring awareness to colorblindness, encouraging inclusivity.
+Our **Color Buddy** tool also includes an *About **Color Buddy*** tab, giving users more information about protanopia, deuteranopia, and tritanopia.
+This *About **Color Buddy*** tab aims to bring awareness to colorblindness, encouraging inclusivity.
 
-The last tab, 'Credits', showcases the contributors of this project to add a more personal touch to the tool. 
+The last tab, *Credits*, showcases the contributors of this project to add a more personal touch to the tool. 
 
 ## How Color Buddy Works:
 ### Frontend:
@@ -55,9 +58,20 @@ The last tab, 'Credits', showcases the contributors of this project to add a mor
 
 ### Backend:
 ```colorBuddy.py```
-  - Where colors are simulated based on the RGB input and the type of color vision deficiency (using Machado matrices).
+  - Where colors are simulated based on the RGB input and the type of color vision deficiency (using Machado et al. matrices).
   - Also creates images of the colors to be displayed.
     
 ```app.py```
   - Where the Flask server is created.
 
+## Details About Machado et. al Matrices:
+The Machado et. al matrices translates a color that a color-normal person perceives into the color that a colorblind person may see. 
+This model simulates missing/shifted cone responses in visual systems.
+
+### How This Method Works:
+- First, an **RGB value is converted into an LMS space.**
+  - LMS represents three types of cone cells in the human retina (**L**ong-wavelength aka red, **M**edium-wavelength aka green, and **S**hort-wavelength aka blue).
+  - This transformation is performed by multiplying the RGB vector by a transformation matrix that is determined by the type of colorblindness.
+    <br>
+- The LMS values are then **converted back into a new RGB value** that represents what a person which a specific color vision deficiency would see.
+  - This involves multiplying the LMS vector by the inverse of the initial matrix.
