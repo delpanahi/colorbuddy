@@ -148,12 +148,6 @@ body {
   margin: 0 auto 8px;
 }
 
-/* credits 
-.tab-inner.credits {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}*/
 
 /* credits */
 .credits {
@@ -213,20 +207,6 @@ body {
   justify-content: center;
 }
 
-/*.img1 {
-  border-radius: 50%;
-  width: 96px;
-  height: 96px;
-  object-fit: cover;
-  border: 5px solid transparent;
-  transition: transform .4s, box-shadow .3s;
-}
-
-.img1:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 25px rgba(255, 182, 232, 0.5);
-  border-color: #ffb6e8;
-}*/
 
 /* small responsive tweaks */
 @media (max-width: 760px) {
@@ -265,3 +245,4 @@ body {
   display: block; 
   margin: 0 auto 1em; 
 }
+
