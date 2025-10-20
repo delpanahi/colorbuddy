@@ -1,4 +1,4 @@
-## ColorBuddy 
+## Color Buddy 
 ### for the EmpowHER '25 Hackathon
 
 ### Dependencies:
