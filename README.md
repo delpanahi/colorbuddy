@@ -16,7 +16,7 @@ To start the Flask server, please run:
 - Elena Goldman
 - Natalie Wesseldine
 
-### About Color Buddy:
+## About Color Buddy:
 **Color Buddy** is a tool that allows designers to understand what their designs may look like to people with various types of colorblindness. Through **Color Buddy**, we specifically show designers what their chosen colors look like to people with color vision deficiencies like protanopia, deuteranopia, and tritanopia. 
 
 Once designers input an RGB value, **Color Buddy** will provide a visual of how their inputted color would look to those with protanopia (inablility to see red), deuteranopia (inability to see green), and tritanopia (inability to see blue). 
@@ -30,14 +30,17 @@ The last tab, 'Credits', showcases the contributors of this project to add a mor
 ### Frontend:
 ```colorBuddy.html```
   - Where the tabs, buttons, text input, and images are created.
+    
 ```colorBuddy.css```
   - Styles the html file.
+    
 ```colorBuddy.js```
   - Styles the html file.
 
 ### Backend:
 ```colorBuddy.py```
   - Where colors are simulated based on the RGB input and the type of color vision deficiency.
+    
 ```app.py```
   - Where the Flask server is created.
 
