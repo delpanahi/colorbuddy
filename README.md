@@ -89,4 +89,4 @@ Each 3x3 matrix transforms an RGB value into a strong approximation of the color
 <img width="500" height="200" alt="color buddy home" src="https://github.com/user-attachments/assets/7f7a1fae-138a-4694-95d7-408c80181cfd" />
 <img width="500" height="200" alt="color buddy ex  results" src="https://github.com/user-attachments/assets/dd403e6d-c55f-4b2e-9a35-f3e339a8de80" />
 <img width="500" height="200" alt="color buddy about" src="https://github.com/user-attachments/assets/aecd4bd9-2e0b-4e57-9732-d77c93f45537" />
-<img width="500" height="200" alt="color buddy credits" src="https://github.com/user-attachments/assets/b9056638-d129-408d-96af-97c8c658f891" />
+<img width="500" height="300" alt="color buddy credits" src="https://github.com/user-attachments/assets/b9056638-d129-408d-96af-97c8c658f891" />
