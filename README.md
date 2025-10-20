@@ -30,15 +30,15 @@ If you have Python installed, running one of the above commands (like ```python3
 <br> ```python3 app.py``` for **Mac**
 
 ### Contributors:
-- Delara Panahi
-- Catie Austin
-- Elena Goldman
-- Natalie Wesseldine
+- Delara Panahi (Frontend & Backend Developer)
+- Catie Austin (Frontend Developer)
+- Elena Goldman (Frontend & Backend Developer)
+- Natalie Wesseldine (Frontend Developer)
 
 ## About Color Buddy:
 **Color Buddy** is a tool that allows designers to understand what their designs may look like to people with various types of colorblindness. Through **Color Buddy**, we specifically show designers what their chosen colors look like to people with color vision deficiencies like protanopia, deuteranopia, and tritanopia. 
 
-Once designers input an RGB value, **Color Buddy** will provide a visual of how their inputted color would look to those with protanopia (inablility to see red), deuteranopia (inability to see green), and tritanopia (inability to see blue). 
+Once designers input an RGB value, **Color Buddy** will provide a visual of how their inputted color would look to those with protanopia (inability to see red), deuteranopia (inability to see green), and tritanopia (inability to see blue). 
 
 Our **Color Buddy** tool also includes an *About **Color Buddy*** tab, giving users more information about protanopia, deuteranopia, and tritanopia.
 This *About **Color Buddy*** tab aims to bring awareness to colorblindness, encouraging inclusivity.
@@ -76,6 +76,10 @@ Each 3x3 matrix transforms an RGB value into a strong approximation of the color
 3. The normalized RGB vector is multiplied by this 3×3 matrix to simulate altered cone responses in the visual system.<br>
 4. The resulting RGB values are clipped to the valid range [0, 1], converted back to 0–255, and returned.
 
+## Important Links:
+- https://docs.google.com/presentation/d/1lnc4SXmzALVZPaMrmj9ORTs8aVycWbJD6Mvp_Z5PbqM/edit?usp=sharing
+- [Color Buddy – Track 1.pdf](https://github.com/user-attachments/files/23008888/Color.Buddy.Track.1.pdf)
+- https://www.youtube.com/watch?v=wh3WbMG7ZX0
 
 ## Sources:
 - “A Physiologically-based Model for Simulation of Color Vision Deficiency” — Machado, Oliveira & Fernandes (IEEE Transactions on Visualization & Computer Graphics, Vol. 15(6), Nov/Dec 2009)
