@@ -85,7 +85,7 @@ Each 3x3 matrix transforms an RGB value into a strong approximation of the color
 - “A Physiologically-based Model for Simulation of Color Vision Deficiency” — Machado, Oliveira & Fernandes (IEEE Transactions on Visualization & Computer Graphics, Vol. 15(6), Nov/Dec 2009)
 - Colour Blind Awareness, www.colourblindawareness.org/. Accessed 20 Oct. 2025. 
 
-
+## Screenshots:
 <img width="500" height="200" alt="color buddy home" src="https://github.com/user-attachments/assets/7f7a1fae-138a-4694-95d7-408c80181cfd" />
 <img width="500" height="200" alt="color buddy ex  results" src="https://github.com/user-attachments/assets/dd403e6d-c55f-4b2e-9a35-f3e339a8de80" />
 <img width="500" height="200" alt="color buddy about" src="https://github.com/user-attachments/assets/aecd4bd9-2e0b-4e57-9732-d77c93f45537" />
