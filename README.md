@@ -14,14 +14,15 @@ Please ensure that you have Python installed before running the program.
 
 *You can check if you have Python installed by running:*
 <br>```python --version``` for **Windows**
-<br>```python3 --version``` for **Macs**
+<br>```python3 --version``` for **Mac**
 <br><br>
 
 If you have Python installed, running one of the above commands (like ```python3 --version```) should result in output like:
 <br> ```Python 3.12.7```
 
 *Once Python is installed, please run the line:* 
-<br>```pip install -r .\requirements.txt```
+<br>```pip install -r .\requirements.txt``` for **Windows**
+<br> ```python3 -m pip install -r requirements.txt``` for **Mac**
 <br> ...in order to install the proper packages. 
 
 *Finally, to start the Flask server, please run:*
