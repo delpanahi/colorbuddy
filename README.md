@@ -1,8 +1,9 @@
 ## Color Buddy 
 ### for the "Inclusive Digital Solutions" track of the EmpowHER '25 Hackathon
+<img width="200" height="200" alt="COLORBUDDY" src="https://github.com/user-attachments/assets/f0f9e70e-a29b-45dd-b2d9-150118c4822c" />
 
 ### Dependencies:
-Please run the line:                              <img width="500" height="500" alt="COLORBUDDY" src="https://github.com/user-attachments/assets/f0f9e70e-a29b-45dd-b2d9-150118c4822c" />
+Please run the line:                              
 <br>```pip install -r .\requirements.txt```
 <br> ...in order to install the proper packages. 
 
