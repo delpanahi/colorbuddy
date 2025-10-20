@@ -66,12 +66,18 @@ The last tab, *Credits*, showcases the contributors of this project to add a mor
 
 ## Details About Machado et. al Matrices:
 The Machado et. al matrices translates a color that a color-normal person perceives into the color that a colorblind person may see. 
-This model simulates missing/shifted cone responses in visual systems.
+This model simulates missing/shifted cone responses in visual systems. It is a critical function in the ```colorspacious``` Python library.
+Each 3x3 matrix transforms an RGB value into a strong approximation of the color that a colorblind person would see depending on their color vision deficiency.
 
-### How This Method Works:
-- First, an **RGB value is converted into an LMS space.**
-  - LMS represents three types of cone cells in the human retina (**L**ong-wavelength aka red, **M**edium-wavelength aka green, and **S**hort-wavelength aka blue).
-  - This transformation is performed by multiplying the RGB vector by a transformation matrix that is determined by the type of colorblindness.
-    <br><br>
-- The LMS values are then **converted back into a new RGB value** that represents what a person which a specific color vision deficiency would see.
-  - This involves multiplying the LMS vector by the inverse of the initial matrix.
+### How This Method Works In Our Code:
+1. The input RGB color (0–255 range) is normalized to 0–1 floating-point values.<br>
+2. A transformation matrix corresponding to the selected color vision deficiency (protanopia, deuteranopia, or tritanopia) is chosen from the Machado model.<br>
+3. The normalized RGB vector is multiplied by this 3×3 matrix to simulate altered cone responses in the visual system.<br>
+4. The resulting RGB values are clipped to the valid range [0, 1], converted back to 0–255, and returned.
+
+
+Source:
+“A Physiologically-based Model for Simulation of Color Vision Deficiency” — Machado, Oliveira & Fernandes (IEEE Transactions on Visualization & Computer Graphics, Vol. 15(6), Nov/Dec 2009)
+
+
+
