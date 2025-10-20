@@ -4,19 +4,20 @@
 
 ### Dependencies:
 Please ensure that you have Python installed before running the program.
+<br>
 *You can install Python onto a **Windows** computer by running the line:*
-```winget install Python.Python.3``` 
+<br>```winget install Python.Python.3``` 
 
 *To install Python onto a **Mac** computer, run the following lines:*
-```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
-```brew install python3```
+<br>```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+<br>```brew install python3```
 
 *You can check if you have Python installed by running:*
-```python --version``` for **Windows**
-```python3 --version``` for **Macs**
+<br>```python --version``` for **Windows**
+<br>```python3 --version``` for **Macs**
 
 
-*Once Python is installed, please run the line:*                            
+*Once Python is installed, please run the line:* 
 <br>```pip install -r .\requirements.txt```
 <br> ...in order to install the proper packages. 
 
