@@ -3,13 +3,26 @@
 <img width="200" height="200" alt="COLORBUDDY" src="https://github.com/user-attachments/assets/f0f9e70e-a29b-45dd-b2d9-150118c4822c" />
 
 ### Dependencies:
-Please run the line:                              
+Please ensure that you have Python installed before running the program.
+*You can install Python onto a **Windows** computer by running the line:*
+```winget install Python.Python.3``` 
+
+*To install Python onto a **Mac** computer, run the following lines:*
+```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+```brew install python3```
+
+*You can check if you have Python installed by running:*
+```python --version``` for **Windows**
+```python3 --version``` for **Macs**
+
+
+*Once Python is installed, please run the line:*                            
 <br>```pip install -r .\requirements.txt```
 <br> ...in order to install the proper packages. 
 
-To start the Flask server, please run:
-<br> ```python app.py``` for Windows or
-<br> ```python3 app.py``` for Mac
+*Finally, to start the Flask server, please run:*
+<br> ```python app.py``` for **Windows** or
+<br> ```python3 app.py``` for **Mac**
 
 ### Contributors:
 - Delara Panahi
