@@ -72,6 +72,6 @@ This model simulates missing/shifted cone responses in visual systems.
 - First, an **RGB value is converted into an LMS space.**
   - LMS represents three types of cone cells in the human retina (**L**ong-wavelength aka red, **M**edium-wavelength aka green, and **S**hort-wavelength aka blue).
   - This transformation is performed by multiplying the RGB vector by a transformation matrix that is determined by the type of colorblindness.
-    <br>
+    <br><br>
 - The LMS values are then **converted back into a new RGB value** that represents what a person which a specific color vision deficiency would see.
   - This involves multiplying the LMS vector by the inverse of the initial matrix.
