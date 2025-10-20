@@ -26,5 +26,18 @@ This 'About **Color Buddy**' tab aims to bring awareness to colorblindness, enco
 
 The last tab, 'Credits', showcases the contributors of this project to add a more personal touch to the tool. 
 
+## How Color Buddy Works:
+### Frontend:
+```colorBuddy.html```
+  - Where the tabs, buttons, text input, and images are created.
+```colorBuddy.css```
+  - Styles the html file.
+```colorBuddy.js```
+  - Styles the html file.
 
+### Backend:
+```colorBuddy.py```
+  - Where colors are simulated based on the RGB input and the type of color vision deficiency.
+```app.py```
+  - Where the Flask server is created.
 
